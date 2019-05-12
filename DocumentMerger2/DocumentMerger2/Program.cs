@@ -11,7 +11,7 @@ namespace DocumentMerger2
     {
         static void Main(string[] args)
         {
-            if (args.Length < 3) //if improper num of files exist, do this
+            if (args.Length < 3) //if wrong num of files, do this
             {
                 Console.WriteLine("");
                 Console.WriteLine("DOCUMENT MERGER 2 \n\nFormat: <input_file_1> <input_file_2> ... <input_file_n> <output_file>");
@@ -19,7 +19,7 @@ namespace DocumentMerger2
                 Console.WriteLine("NOTE: Dont forget to add file extensions! ex file1.txt");
                 Console.WriteLine("");
             }
-            else //if proper num of files exist, do this
+            else //if files exist, do this
             {
                 string[] files = new string[args.Length - 1];
                 Array.Copy(args, 0, files, 0, args.Length - 1);
